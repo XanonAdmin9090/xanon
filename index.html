@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker Theme Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo neon">Hacker Space</a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Code</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="landing-page">
+    <h1 class="neon">Welcome to Hacker Space</h1>
+    <p>Your private space for notes, codes, and more.</p>
+    <button class="btn neon" onclick="showLogin()">Login</button>
+  </main>
+
+  <div class="login-container hidden" id="loginContainer">
+    <h1 class="neon">Login</h1>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username" required>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      
+      <button type="submit" class="btn neon">Login</button>
+      <p id="loginMessage"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
